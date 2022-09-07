@@ -4,6 +4,8 @@ The partials in this repository are used to generate the Boxes for https://boxes
 
 You can look at the code to get a feeling for how easy it is to integrate Boxes into an existing theme.
 
+Press <kbd>.</kbd> to open GitHub's editor for an easier browsing experience.
+
 ```
 └── themes
     └── your-theme
