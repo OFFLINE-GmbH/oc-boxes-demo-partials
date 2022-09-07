@@ -1,0 +1,28 @@
+<div class="container">
+    {% for feature in box.features %}
+        <div class="feature {{ loop.last ? 'pb-5' }}">
+            <div class="container">
+                <div class="row {{ feature.reverse ? 'flex-row-reverse' }}">
+                    <div class="col-lg-5 offset-lg-1">
+                        <div class="feature-content">
+                            <p>
+                            <div class="feature-pill"><span>{{ feature.badge }}</span></div>
+                            </p>
+                            <h3>{{ feature.title }}</h3>
+                            <p>{{ feature.text | nl2br }}</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="feature-image">
+                            <img
+                                src="{{ ('assets/images/' ~ feature.image ~ '-image.png') | theme }}"
+                                class="img-fluid"
+                                alt="{{ feature.title }}"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>

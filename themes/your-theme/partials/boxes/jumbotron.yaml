@@ -1,0 +1,19 @@
+handle: jumbotron
+name: Jumbotron
+section: Homepage
+
+form:
+    fields:
+        title:
+            label: Title
+            type: text
+        lead:
+            label: Lead
+            type: textarea
+            size: tiny
+        btn_link:
+            label: Button Link
+            type: text
+        btn_text:
+            label: Button Text
+            type: text

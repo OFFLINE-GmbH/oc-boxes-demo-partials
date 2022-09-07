@@ -1,0 +1,16 @@
+[collection blog]
+handle = "Blog\Post"
+==
+{% set latestPosts = blog.limit(box.limit_posts | default(3)).get %}
+
+<div class="latestnews">
+    <div class="container">
+        <h3>Latest News</h3>
+
+        <div class="blog-featured row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3 pb-5">
+            {% for post in latestPosts %}
+                {% partial 'blog/post-card' post=post %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

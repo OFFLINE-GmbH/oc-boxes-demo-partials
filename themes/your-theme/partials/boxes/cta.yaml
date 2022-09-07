@@ -1,0 +1,17 @@
+name: Call-to-Action
+handle: cta
+section: Homepage
+form:
+    fields:
+        title:
+            label: Title
+            type: text
+        text:
+            label: Text
+            type: textarea
+        btn_link:
+            label: Button Link
+            type: text
+        btn_text:
+            label: Button Text
+            type: text

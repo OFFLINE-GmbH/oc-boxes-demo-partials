@@ -1,0 +1,12 @@
+handle: intro
+name: Intro
+section: Homepage
+
+form:
+    fields:
+        title:
+            label: Title
+            type: text
+        lead:
+            label: Lead
+            type: textarea

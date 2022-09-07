@@ -1,0 +1,29 @@
+name: Features
+section: Homepage
+handle: features
+form:
+    fields:
+        features:
+            type: repeater
+            span: full
+            form:
+                fields:
+                    badge:
+                        label: Badge
+                        type: text
+                    title:
+                        label: Title
+                        type: text
+                    text:
+                        label: Text
+                        type: textarea
+                    reverse:
+                        label: Swap columns
+                        type: checkbox
+                    image:
+                        label: Image
+                        type: dropdown
+                        options:
+                            layouts: Layouts
+                            pages: Pages
+                            partials: Partials

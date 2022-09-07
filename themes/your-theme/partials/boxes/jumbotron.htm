@@ -1,0 +1,33 @@
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="jumbotron-intro">
+                    <h1>{{ box.title }}</h1>
+                    <p class="lead">
+                        {{ box.lead | nl2br }}
+                    </p>
+                    {% if box.btn_text %}
+                        <p>
+                            <a
+                                href="{{ box.btn_link }}"
+                                target="_blank"
+                                class="btn btn-outline-light btn-pill"
+                            >
+                                {{ box.btn_text }}
+                            </a>
+                        </p>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="jumbotron-product">
+                    <img src="{{ 'assets/images/homepage-header-image.png'|theme }}" class="img-fluid" alt="Product Shot"/>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron-decoration-1"></div>
+        <div class="jumbotron-decoration-2"></div>
+    </div>
+</div>
