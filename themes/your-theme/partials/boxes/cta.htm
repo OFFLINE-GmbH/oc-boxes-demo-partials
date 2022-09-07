@@ -1,7 +1,11 @@
 <div class="actioncall">
     <div class="container">
         <h3>{{ box.title }}</h3>
-        <p class="lead">{{ box.text | nl2br }}</p>
+
+        <p class="lead">
+            {{ box.text | nl2br }}
+        </p>
+
         {% if box.btn_text %}
             <a
                 href="{{ box.btn_link }}"
@@ -11,6 +15,7 @@
                 {{ box.btn_text }}
             </a>
         {% endif %}
+
         <div class="actioncall-decoration-1"></div>
         <div class="actioncall-decoration-2"></div>
         <div class="actioncall-decoration-3"></div>
